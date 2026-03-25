@@ -132,7 +132,7 @@ T4_WEB/
 ├── main.py               # Aplikasi FastAPI (Auth + CRUD + RBAC)
 ├── requirements.txt      # Daftar dependensi Python
 ├── pytest.ini            # Konfigurasi Pytest
-├── Readme.md             # Laporan ini
+├── Readme.md             # Panduan penggunaan proyek
 └── tests/
     ├── __init__.py       # Penanda paket Python
     └── test_main.py      # Test suite (19 test case)
@@ -317,7 +317,7 @@ Skenario pertama bertujuan untuk memverifikasi bahwa seluruh alur autentikasi, m
 Skenario kedua bertujuan untuk memverifikasi bahwa seluruh operasi CRUD pada entitas Task dapat dilakukan dengan benar oleh pengguna berperan `admin`. Terdapat 8 (delapan) *test case* dalam skenario ini.
 
 | No | Nama Test Case                   | Kondisi Uji                                              | Ekspektasi                        | Hasil     |
-|----|----------------------------------|----------------------------------------------------------|-----------------------------------|-----------| 
+|----|----------------------------------|----------------------------------------------------------|-----------------------------------|-----------|
 | 1  | `test_create_task`               | POST /tasks dengan data valid sebagai admin              | Status 201, task baru dikembalikan | ✅ PASSED |
 | 2  | `test_read_all_tasks`            | GET /tasks setelah membuat 2 task                        | Status 200, list berisi 2 task    | ✅ PASSED |
 | 3  | `test_read_single_task`          | GET /tasks/{id} dengan ID yang valid                     | Status 200, task yang tepat dikembalikan | ✅ PASSED |
@@ -421,7 +421,8 @@ Untuk pengembangan lebih lanjut, penulis menyarankan beberapa perbaikan berikut:
 
 ## LAMPIRAN
 
-> **Catatan:** Tempatkan setiap screenshot di bawah keterangan lampiran yang sesuai. Setiap gambar diberi nomor, judul, dan keterangan singkat.
+> **Catatan untuk Penyusun Laporan:**
+> Tempatkan setiap screenshot di bawah keterangan lampiran yang sesuai, sesuai urutan yang telah ditandai pada bab-bab sebelumnya. Setiap gambar sebaiknya diberi nomor, judul, dan keterangan singkat.
 
 ---
 
